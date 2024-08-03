@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos - K-Drama & K-Pop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #2e003f, #7d3f9c);
+            color: white;
+            overflow-x: hidden;
+        }
+        header {
+            background: #3c1a4b;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .search-bar {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .search-bar input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .videos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .videos iframe {
+            width: 80%;
+            height: 400px;
+            margin: 10px 0;
+            border: none;
+        }
+        footer {
+            background: #3c1a4b;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="videos.html">Videos</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="search-bar">
+            <input type="text" placeholder="Search videos...">
+        </div>
+        <h1>Latest Videos</h1>
+        <div class="videos">
+            <!-- Example K-pop video -->
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" allowfullscreen></iframe>
+            <!-- Example K-drama video -->
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_4" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 K-Drama & K-Pop. All rights reserved.
+    </footer>
+</body>
+</html>
